@@ -9,8 +9,8 @@ Pull requests are welcome. For major changes, please follow the steps below:
 1. Open an issue first to discuss what you would like to change.
 2. Clone the project to your local machine.
 3. Create a pull request
-4. Await to see if your request was accepted and implemented
-NB. *Image and file sharing from this project are subject to the copyright*
+4. Await to see if your request was accepted and implemented.
+NB*Image and file sharing from this project are subject to the copyright* 
 ## Business Driven Development (BDD)
 The user will be able to:
 - See a description of what the application does on the landing page.
