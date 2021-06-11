@@ -1,7 +1,7 @@
 ## Project name
-Akana Name
+Akan Name
 ## Project description
-Akina Name is a web application that prompts a user of their birthday and calculates the day of the week they were born and depending on their gender input, the app generates the correct Akina name for the user.
+Akan Name is a web application that prompts a user of their birthday and calculates the day of the week they were born and depending on their gender input, the app generates the correct Akan name for the user.
 ## Author
 Fredrick Wambua Musyoki
 ## Setup instructions
@@ -10,6 +10,7 @@ Pull requests are welcome. For major changes, please follow the steps below:
 2. Clone the project to your local machine.
 3. Create a pull request
 4. Await to see if your request was accepted and implemented.
+
 NB*Image and file sharing from this project are subject to the copyright* 
 ## Business Driven Development (BDD)
 The user will be able to:
@@ -18,7 +19,7 @@ The user will be able to:
 - Choose what gender they are
 - Click the submit button to see what their Akan name would be
 ## Deployed live link
-To see how the project works, click the deployment link [here](https://fredrickwambua.github.io/akina-names/).
+To see how the project works, click the deployment link [here](https://fredrickwambua.github.io/akan-names/).
 ## Technologies used.
 This project employs varoius technologies that make it a one complete project to perform the desired task, make it user friendly and appealing and responsive to various web media.
 - HTML
