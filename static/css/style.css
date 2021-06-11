@@ -1,0 +1,16 @@
+body{
+    box-sizing: border-box;
+    background-image: url("../images/ghana.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+
+}
+.intro{
+    color:greenyellow;
+    text-align: center;
+    margin-top: 60px;
+}
+.intro p{
+    color: yellowgreen;
+    font-size: larger;
+}
