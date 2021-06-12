@@ -1,16 +1,33 @@
 body{
     box-sizing: border-box;
-    background-image: url("../images/ghana.jpg");
-    background-size: cover;
-    background-repeat:no-repeat;
+    /* background-image: url("../images/ghana.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+
 
 }
-.intro{
-    color:greenyellow;
-    text-align: center;
-    margin-top: 60px;
+nav{
+    background-color: #7F1734 ;
+    height: 25vh;
+    position: sticky;
+   
 }
-.intro p{
+.nav-item {
+    vertical-align: middle;
+    text-align: center;
     color: yellowgreen;
-    font-size: larger;
+    padding-bottom: 0px;
+    padding-top: 30px;
+}
+.main-content {
+    margin-top: 30px;
+}
+.main-content p {
+    font-size: x-large;
+}
+#p-form {
+    text-align: center;
+}
+span {
+    font-weight: 500;
 }
