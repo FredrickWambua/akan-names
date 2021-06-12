@@ -9,15 +9,20 @@
     <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
+    <!-- navbar start -->
     <nav>
         <div class="nav-item">
         <h1>Akan Name</h1>
-        <p><em>Welcome to Akan Name, We promote our Ghanaian naming culture.</em></p>
+        <p><em>Welcome to Akan Name, Know your Ghananian name!</em></p>
         </div>
     </nav>
+    <!-- navbar end -->
+
+    <!-- main content start -->
     <div class="container main-content">
         <div class="row">
-            <div class="col description">
+            <!-- ==  app description text start == -->
+            <div class="col-md-6 description">
                 <h3>About Akan Name</h3>
                 <p> 
                     We are a web application that genetarates names based on birthday and gender of and
@@ -28,12 +33,46 @@
                     which corresponds to the day in the week they were born.  
                 </p>
             </div>
-            <div class="col form-content">
-                <p id="p-form">To know your Akan name, <span>Fill the form below:</span></p>
+            <!-- == app content description text end == -->
+
+            <!-- == form content start == -->
+            <div class="col-md-6 form-content">
+                <p>Want to know your Akan name?</p> 
+                <div class="container">
+                    <form action="">
+                        <caption><strong>Fill this form:</strong></caption>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label for="inputDate" class="form-label">Date</label>
+                                <input type="number" class="form-control" id="inputDate">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="inputMonth" class="form-label">Month</label>
+                                <input type="number" class="form-control" id="inputMonth">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="inputYear" class="form-label">Year</label>
+                                <input type="number" class="form-control" id="inputYear">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="inputGender" class="form-label">Gender</label>
+                            <select id="inputGender" class="form-select">
+                              <option selected>Choose...</option>
+                              <option>Male</option>
+                              <option>Female</option>
+                            </select>
+                        </div>
+                        <button class="submit" type="submit">
+                            Submit
+                        </button>
+                    </form>
+                </div>
             </div>
-            
+            <!-- == form content end == -->
         </div>
     </div>
+    <!-- main content end -->
     <script src="static/js/main.js"></script>
     <script src="static/js/bootstrap.js"></script>
 </body>
