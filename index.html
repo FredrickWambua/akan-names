@@ -45,13 +45,13 @@
                             <div class="col-md-4">
                                 <label for="date-of-birth">
                                      Date:
-                                    <input id="inputDate"  type="number" name="date-of-birth" class="form-control" placeholder="dd" value required>
+                                    <input id="inputDate"  type="number" name="date-of-birth" class="form-control" placeholder="dd" value required min="1" max="31">
                                 </label>    
                             </div>
                             <div class="col-md-4">
                                 <label for="month-of-birth">
                                     Month:
-                                    <input id="inputMonth"  type="number" name="month-of-birth" class="form-control" placeholder="mm" value required>
+                                    <input id="inputMonth"  type="number" name="month-of-birth" class="form-control" placeholder="mm" value required min="1" max="12">
                                 </label> 
                             </div>
                             <div class="col-md-4">
@@ -73,10 +73,16 @@
                         <button class="submit" type="submit">
                             Submit
                         </button>
+                        <button class="reset" type="reset">
+                            Reset
+                        </button>
                     </form>
                 </div>
             </div>
             <!-- == form content end == -->
+        </div>
+        <div class="result">
+            
         </div>
     </div>
     <!-- main content end -->
