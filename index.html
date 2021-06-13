@@ -43,25 +43,32 @@
                         <caption><strong>Fill this form:</strong></caption>
                         <div class="row">
                             <div class="col-md-4">
-                                <label for="inputDate" class="form-label">Date</label>
-                                <input type="number" class="form-control" id="inputDate">
+                                <label for="date-of-birth">
+                                     Date:
+                                    <input id="inputDate"  type="number" name="date-of-birth" class="form-control" placeholder="dd" value required>
+                                </label>    
                             </div>
                             <div class="col-md-4">
-                                <label for="inputMonth" class="form-label">Month</label>
-                                <input type="number" class="form-control" id="inputMonth">
+                                <label for="month-of-birth">
+                                    Month:
+                                    <input id="inputMonth"  type="number" name="month-of-birth" class="form-control" placeholder="mm" value required>
+                                </label> 
                             </div>
                             <div class="col-md-4">
-                                <label for="inputYear" class="form-label">Year</label>
-                                <input type="number" class="form-control" id="inputYear">
+                                <label for="year-of-birth">
+                                    Year:
+                                    <input id="inputYear"  type="number" name="year-of-birth" class="form-control" placeholder="yyyy" value required>
+                                </label> 
                             </div>
                         </div>
-                        <div>
-                            <label for="inputGender" class="form-label">Gender</label>
-                            <select id="inputGender" class="form-select">
-                              <option selected>Choose...</option>
-                              <option>Male</option>
-                              <option>Female</option>
-                            </select>
+                        <div class="gender-section">
+                            <label for="gender">
+                                <p>Choose your gender</p>
+                                <caption>Male</caption> 
+                                <input id="male-input" type="radio" name="gender" value="male" required>
+                                <caption>Female</caption>
+                                <input id="female-input" type="radio" name="gender" value="female" required>
+                            </label>
                         </div>
                         <button class="submit" type="submit">
                             Submit
