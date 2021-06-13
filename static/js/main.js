@@ -5,6 +5,8 @@ function getAkanName(){
     let yy = document.getElementById("inputYear").value;
     let genders = document.getElementsByName("gender");
 }
+//data validation
+
 
 //function to get gender
 function getGender(){
