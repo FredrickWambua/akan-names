@@ -52,6 +52,12 @@ nav{
     border-radius: 5px;
 }
 
+.result {
+    text-align: center;
+    font-size: x-large;
+    margin-top: 30px;
+}
+
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
