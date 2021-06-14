@@ -1,68 +1,69 @@
 
 
-//preventing default
-document.getElementById("submit").addEventListener("click", function(event){
-    event.preventDefault()
-    });
+//Variables
+var daysOfWeek = [
+    "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+    ];
+var maleNames = [
+    "Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"
+    ];
+var femaleNames = [
+    "Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"
+    ];
+
+var button = document.getElementById("submit").addEventListener("click", buttonResult);
+function buttonResult(e){
+    e.preventDefault()
+    let theDay = parseInt(document.getElementById("inputDate").value);
+    let theMonth = parseInt(document.getElementById("inputMonth").value);
+    let theYear = document.getElementById("inputYear").value;
+    let results = document.querySelector(".result")
+    
+    let calculation = calculateDayIndex(theDay, theMonth, theYear)
+    if (document.getElementById("male-input").checked){
+        results.innerHTML = "Your Akan name is " + maleNames[calculation]
+    }
+    else if (document.getElementById("female-input").checked){
+         results.innerHTML = "Your Akan name is " + femaleNames[calculation]
+    }
+}
+
+
+// variables
+
 
 // getting akan name
 function calculateDayIndex(day, month, year){
-    let dd = document.getElementById("inputDate").value;
-    let mm = document.getElementById("inputMonth").value;
-    let YY = document.getElementById("inputYear").value;
-    let temp = YY.split("")
-    let temp2 = temp.slice()
-    let yy = parseInt("".join(((temp.split("")).slice(0,2))))
-    let cc = parseInt("".join(((temp2.split("")).slice(2,2))))
-    let dayIndex =  ( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd ) % 7
+    let dd = day;
+    let mm = month;
 
-    //date validation
-    function dateValidity(){
+ 
+    var temp2 = year.slice(2,4)
+    let yy = parseInt(temp2)
+    let cc = parseInt(year.slice(0,2))
+ 
+
+    //date and month validation
+    function dateValidity( dd, mm){
         if( dd < 1 || dd > 31){
-            return false;
+            alert("invalid date")
         }
-        else{
-            return true;
-        }
-    }
-
-    // month validation
-    function monthValidity(){
         if( mm < 1 || mm > 12){
-           return false;
-        }
-        else{
-            return true
+            alert("invalid month")
         }
     }
+    dateValidity(dd, mm);
+    let dayIndex =  Math.floor(( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd ) % 7);
+    return dayIndex;
 }
 
-// day and name function
-function getDayAndName(){
-    let daysOfWeek = [
-        "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
-        ];
-    let maleNames = [
-        "Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"
-        ];
-    let femaleNames = [
-        "Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"
-        ];
-    let index = calculateDayIndex(dd, mm, YY)
-    let gender = document.getElementsByName("gender").value;
-   
-    //gender function
-    function getGender(){
-        for(let gender in gender){
-            if(gende.checked){
-                return gender.value
-            }
-        }
-    }
-    if (gender === "male"){
-        return maleNames [""];
-    }
-    else {
-        return femaleNames [""];
-    }
-}
+
+
+
+
+
+
+
+
+
+
