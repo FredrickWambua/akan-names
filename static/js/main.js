@@ -1,3 +1,5 @@
+
+
 //preventing default
 document.getElementById("submit").addEventListener("click", function(event){
     event.preventDefault()
@@ -27,15 +29,13 @@ function calculateDayIndex(day, month, year){
     // month validation
     function monthValidity(){
         if( mm < 1 || mm > 12){
-            return false;
+           return false;
         }
         else{
             return true
         }
     }
 }
-
-
 
 // day and name function
 function getDayAndName(){
@@ -50,6 +50,7 @@ function getDayAndName(){
         ];
     let index = calculateDayIndex(dd, mm, YY)
     let gender = document.getElementsByName("gender").value;
+   
     //gender function
     function getGender(){
         for(let gender in gender){
@@ -57,5 +58,11 @@ function getDayAndName(){
                 return gender.value
             }
         }
+    }
+    if (gender === "male"){
+        return maleNames [""];
+    }
+    else {
+        return femaleNames [""];
     }
 }
