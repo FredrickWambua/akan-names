@@ -1,12 +1,18 @@
 
 body{
     box-sizing: border-box;
-    background: rgba(40, 180, 80, 0.9);
+    background: url(/static/images/ghana-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
 nav{
     background-color: #7F1734 ;
-    height: 25vh;
+    height: 20vh;
     position: sticky;
    
 }
@@ -19,13 +25,18 @@ nav{
 }
 
 .main-content {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    color:black;
-   
+    background-color: rgba(0, 128, 128, 0.7);
+    color: white;
+    padding-top: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+  
+       
 }
+
 .main-content p {
-    font-size: x-large;
+    font-size: 20px;
 }
 .description {
     
@@ -56,6 +67,28 @@ nav{
     text-align: center;
     font-size: x-large;
     margin-top: 30px;
+}
+footer{
+    background-color: #7F1734;
+    color: greenyellow;
+    text-align: center;
+    position: static;
+}
+.footer{
+    padding-top: 30px;
+    padding-bottom: 10px;
+
+}
+.names{
+    text-align: justify;
+}
+.female-names {
+    justify-content: left;
+}
+
+li{
+    list-style-type: none;
+    font-size: small;
 }
 
 input[type=number]::-webkit-inner-spin-button,
