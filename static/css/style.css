@@ -1,7 +1,7 @@
 
 body{
     box-sizing: border-box;
-    
+    background: rgba(40, 180, 80, 0.9);
 }
 
 nav{
@@ -26,6 +26,10 @@ nav{
 }
 .main-content p {
     font-size: x-large;
+}
+.description {
+    
+    
 }
 
 .form-content p {
