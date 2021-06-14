@@ -21,10 +21,10 @@ function buttonResult(e){
     
     let calculation = calculateDayIndex(theDay, theMonth, theYear)
     if (document.getElementById("male-input").checked){
-        results.innerHTML = "Your Akan name is " + maleNames[calculation]
+        results.innerHTML = "Your Akan name is " + maleNames[calculation] + ", born on a " + daysOfWeek[calculation] +"."
     }
     else if (document.getElementById("female-input").checked){
-         results.innerHTML = "Your Akan name is " + femaleNames[calculation]
+         results.innerHTML = "Your Akan name is " + femaleNames[calculation]+ ", born on a " + daysOfWeek[calculation]+ "."
     }
 }
 
