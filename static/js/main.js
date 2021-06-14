@@ -13,11 +13,29 @@ function calculateDayIndex(day, month, year){
     let yy = parseInt("".join(((temp.split("")).slice(0,2))))
     let cc = parseInt("".join(((temp2.split("")).slice(2,2))))
     let dayIndex =  ( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd ) % 7
+
+    //date validation
+    function dateValidity(){
+        if( dd < 1 || dd > 31){
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+
+    // month validation
+    function monthValidity(){
+        if( mm < 1 || mm > 12){
+            return false;
+        }
+        else{
+            return true
+        }
+    }
 }
-//data validation
 
 
-//function to get gender
 
 // day and name function
 function getDayAndName(){
@@ -32,4 +50,12 @@ function getDayAndName(){
         ];
     let index = calculateDayIndex(dd, mm, YY)
     let gender = document.getElementsByName("gender").value;
+    //gender function
+    function getGender(){
+        for(let gender in gender){
+            if(gende.checked){
+                return gender.value
+            }
+        }
+    }
 }
