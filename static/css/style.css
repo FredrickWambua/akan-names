@@ -1,7 +1,7 @@
 
 body{
     box-sizing: border-box;
-    background: url("../images/ghana-bg.jpg");
+    background: url("/static/images/ghana-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     top: 0;
