@@ -51,6 +51,9 @@ function calculateDayIndex(day, month, year){
         if( mm < 1 || mm > 12){
             alert("invalid month")
         }
+        if(year.length !== 4){
+            alert("invalid year")
+        }
     }
     dateValidity(dd, mm);
     let dayIndex =  Math.floor(( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd ) % 7);
